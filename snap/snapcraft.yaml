@@ -1,0 +1,66 @@
+name: upwork-for-linux
+base: core18
+summary: Unofficial Upwork client
+description: An unofficial Upwork desktop application for linux
+grade: stable
+confinement: strict
+adopt-info: upwork-for-linux
+
+parts:
+  upwork-for-linux:
+    source-type: local
+    source: .
+    plugin: cmake
+    override-pull: |
+      snapcraftctl pull
+      mkdir -p build/release && cd build/release && rm -f CMakeCache.txt
+      echo "Configuring cmake to generate the version information"
+      cmake -DCMAKE_BUILD_TYPE=Release ../..
+      cd ../..
+      sed -i.bak -e 's|Icon=upwork-for-linux|Icon=share/icons/hicolor/256x256/apps/upwork-for-linux.png|g' resource/desktop/upwork-for-linux.desktop
+      version=$(cat "src/VERSION")
+      echo "Setting version to ${version}"
+      snapcraftctl set-version $version
+    configflags:
+      - -DCMAKE_BUILD_TYPE=Release
+    build-packages:
+      - build-essential
+      - libgtkmm-3.0-dev
+      - libwebkit2gtk-4.0-dev
+      - libayatana-appindicator3-dev
+    stage-packages:
+      - libgtkmm-3.0-1v5
+      - libayatana-appindicator3-1
+      - glib-networking
+      - gstreamer1.0-plugins-base
+      - gstreamer1.0-plugins-good
+      - gstreamer1.0-plugins-bad
+      - gstreamer1.0-libav
+
+slots:
+  dbus-app:
+    interface: dbus
+    bus: session
+    name: com.github.upwork-for-linux
+
+apps:
+  upwork-for-linux:
+    command: bin/upwork-for-linux
+    desktop: share/applications/upwork-for-linux.desktop
+    common-id: com.github.upwork-for-linux
+    extensions: [gnome-3-28]  # This takes care of most of the things for us
+    plugs:
+      - network
+      - network-manager
+      - network-manager-observe
+      - browser-support
+      - camera
+      - audio-playback
+      - audio-record
+      - home
+      - removable-media
+      - opengl
+      - upower-observe
+      - screen-inhibit-control
+    slots:
+      - dbus-app

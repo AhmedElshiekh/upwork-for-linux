@@ -1,0 +1,7 @@
+/media/a7m6d/Projects/cpp_PJ/__src/upwork-master/obj-x86_64-linux-gnu/CMakeFiles/install/strip.dir
+/media/a7m6d/Projects/cpp_PJ/__src/upwork-master/obj-x86_64-linux-gnu/CMakeFiles/install/local.dir
+/media/a7m6d/Projects/cpp_PJ/__src/upwork-master/obj-x86_64-linux-gnu/CMakeFiles/install.dir
+/media/a7m6d/Projects/cpp_PJ/__src/upwork-master/obj-x86_64-linux-gnu/CMakeFiles/list_install_components.dir
+/media/a7m6d/Projects/cpp_PJ/__src/upwork-master/obj-x86_64-linux-gnu/CMakeFiles/rebuild_cache.dir
+/media/a7m6d/Projects/cpp_PJ/__src/upwork-master/obj-x86_64-linux-gnu/CMakeFiles/edit_cache.dir
+/media/a7m6d/Projects/cpp_PJ/__src/upwork-master/obj-x86_64-linux-gnu/CMakeFiles/upwork.dir
