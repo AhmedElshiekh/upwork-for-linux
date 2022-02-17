@@ -1,7 +1,7 @@
 Source: upwork-for-linux
 Section: web
 Priority: optional
-Maintainer: Enes Hecan <nshecan@gmail.com>
+Maintainer: Ahmed Elshiekh <ahmedel.sh50@gmail.com>
 Build-Depends: cmake,
                debhelper (>=10),
                libayatana-appindicator3-dev,

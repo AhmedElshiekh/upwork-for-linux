@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Upwork for Linux
+GenericName=Unofficial Upwork
+Comment=An unofficial Upwork desktop application for linux
+Exec=Upwork %u
+MimeType=x-scheme-handler/upwork
+Icon=upwork
+Categories=GTK;GNOME;Network;
+Keywords=chat;im;messaging;messenger;sms;upwork;upwork-desktop;

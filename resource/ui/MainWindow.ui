@@ -249,7 +249,7 @@
             <accelerator key="F5" signal="clicked"/>
           </object>
         </child>
-        <!-- <child>
+        <child>
           <object class="GtkButton" id="open_phone_number_button">
             <property name="visible">True</property>
             <property name="can-focus">True</property>
@@ -263,7 +263,7 @@
               </object>
             </child>
           </object>
-        </child> -->
+        </child>
         <child>
           <object class="GtkMenuButton" id="header_menu_button">
             <property name="visible">True</property>

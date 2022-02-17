@@ -214,7 +214,7 @@ namespace wfl::ui
 
     void WebView::sendRequest(std::string url)
     {
-        auto const uriPrefix = std::string{"upwork:/"};
+        auto const uriPrefix = std::string{"whatsapp:/"};
         if (url.find(uriPrefix) != std::string::npos)
         {
             url.replace(0U, uriPrefix.size(), UPWORK_WEB_URI);

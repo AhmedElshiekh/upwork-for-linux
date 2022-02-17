@@ -8,19 +8,19 @@ namespace wfl::ui
     {
         std::pair<char const*, char const*> getTrayIconNames()
         {
-            constexpr auto const Upwork_TRAY                     = "upwork-tray";
-            constexpr auto const Upwork_TRAY_ATTENTION           = "upwork-tray-attention";
-            constexpr auto const Upwork_FOR_LINUX_TRAY           = "upwork-for-linux-tray";
-            constexpr auto const Upwork_FOR_LINUX_TRAY_ATTENTION = "upwork-for-linux-tray-attention";
+            constexpr auto const UPWORK_TRAY                     = "upwork-tray";
+            constexpr auto const UPWORK_TRAY_ATTENTION           = "upwork-tray-attention";
+            constexpr auto const UPWORK_FOR_LINUX_TRAY           = "upwork-for-linux-tray";
+            constexpr auto const UPWORK_FOR_LINUX_TRAY_ATTENTION = "upwork-for-linux-tray-attention";
 
             auto const iconTheme = Gtk::IconTheme::get_default();
-            if (iconTheme->has_icon(WHATSAPP_TRAY) && iconTheme->has_icon(WHATSAPP_TRAY_ATTENTION))
+            if (iconTheme->has_icon(UPWORK_TRAY) && iconTheme->has_icon(UPWORK_TRAY_ATTENTION))
             {
-                return {WHATSAPP_TRAY, WHATSAPP_TRAY_ATTENTION};
+                return {UPWORK_TRAY, UPWORK_TRAY_ATTENTION};
             }
-            else if (iconTheme->has_icon(WHATSAPP_FOR_LINUX_TRAY) && iconTheme->has_icon(WHATSAPP_FOR_LINUX_TRAY_ATTENTION))
+            else if (iconTheme->has_icon(UPWORK_FOR_LINUX_TRAY) && iconTheme->has_icon(UPWORK_FOR_LINUX_TRAY_ATTENTION))
             {
-                return {WHATSAPP_FOR_LINUX_TRAY, WHATSAPP_FOR_LINUX_TRAY_ATTENTION};
+                return {UPWORK_FOR_LINUX_TRAY, UPWORK_FOR_LINUX_TRAY_ATTENTION};
             }
             else
             {

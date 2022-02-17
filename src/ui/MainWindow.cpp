@@ -310,7 +310,6 @@ namespace wfl::ui
 
         aboutDialog.set_title("About");
         aboutDialog.set_version(VERSION);
-        // aboutDialog.set_version(VERSION);
         aboutDialog.set_program_name("Upwork for Linux");
         aboutDialog.set_comments("An unofficial Upwork desktop application for linux.");
         aboutDialog.set_website("https://github.com/AhmedElshiekh/upwork-for-linux");

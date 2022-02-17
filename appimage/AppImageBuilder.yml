@@ -2,11 +2,11 @@ version: 1
 AppDir:
   path: ./AppDir
   app_info:
-    id: whatsapp-for-linux
-    name: whatsapp-for-linux
-    icon: whatsapp-for-linux
+    id: upwork-for-linux
+    name: upwork-for-linux
+    icon: upwork-for-linux
     version: !ENV ${RELEASE_NAME}
-    exec: usr/bin/whatsapp-for-linux
+    exec: usr/bin/upwork-for-linux
     exec_args: $@
   apt:
     arch: amd64

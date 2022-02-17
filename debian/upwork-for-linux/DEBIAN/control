@@ -1,0 +1,10 @@
+Package: upwork-for-linux
+Version: 1.0
+Architecture: amd64
+Maintainer: Ahmed Elshiekh <ahmedel.sh50@gmail.com>
+Installed-Size: 408
+Depends: glib-networking, gstreamer1.0-libav, gstreamer1.0-plugins-bad, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, libayatana-appindicator3-1, libgtkmm-3.0-1v5, libwebkit2gtk-4.0-37
+Section: web
+Priority: optional
+Homepage: https://github.com/eneshecan/upwork-for-linux
+Description: An unofficial Upwork desktop application for linux
