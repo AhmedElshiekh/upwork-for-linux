@@ -10,4 +10,4 @@ Depends: upwork-for-linux (= 1.0)
 Section: debug
 Priority: optional
 Description: debug symbols for upwork-for-linux
-Build-Ids: 7497ca7ae707c367642de5ad874c929c8ea08e78
+Build-Ids: c28e2dd771ee585d568935c027a2119568903a18
